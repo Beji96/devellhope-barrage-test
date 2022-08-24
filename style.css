@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+}
+/* start aside */
+aside {
+  width: 20%;
+  height: 100vh;
+  background-color: grey;
+}
+.child-aside {
+  margin: 1em auto;
+  width: 10rem;
+  height: 7vh;
+  background-color: blue;
+}
+main {
+  width: 100%;
+}
+/* finish aside */
+/* start main header */
+.header {
+  padding: 1em;
+  align-items: center;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+.child-header {
+  background-color: lightgray;
+  height: 5vh;
+  width: 5rem;
+}
+.child-second-header {
+  background-color: grey;
+  width: 5rem;
+  text-transform: uppercase;
+  padding: 1em;
+  text-align: center;
+}
+.big-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 5em auto;
+  height: 40vh;
+  width: 80%;
+  background-color: red;
+}
+.par {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.par p {
+  margin-top: 5em;
+  padding: 1em 4em 1em 1em;
+  background-color: lightgray;
+}
+.child-big-second p {
+  padding: 1em;
+  text-transform: uppercase;
+  margin-top: 5em;
+  background-color: grey;
+  text-align: center;
+}
+.circle {
+  left: 5%;
+  width: 3rem;
+  height: 6vh;
+  background-color: grey;
+  position: absolute;
+  top: 90%;
+  left: 95%;
+  border-radius: 50%;
+}
+/* finish main header */
+/* media */
+@media (max-width: 600px) {
+  aside {
+    display: none;
+  }
+  .child-header {
+    background-color: blue;
+    height: 5vh;
+    width: 5rem;
+  }
+  .big-parent {
+    background-color: grey;
+    height: 30vh;
+    width: 100%;
+  }
+  .circle {
+    left: 5%;
+    width: 3rem;
+    height: 6vh;
+    background-color: grey;
+    position: absolute;
+    top: 90%;
+    border-radius: 50%;
+  }
+  .child-big-second p {
+    display: none;
+  }
+  .big-parent {
+    margin: 0;
+  }
+}
